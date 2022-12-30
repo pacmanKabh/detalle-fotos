@@ -1,0 +1,152 @@
+:root {
+  --modo-oscuro: #030613;
+  --texto-modo-oscuro: #fffbfb;
+
+  --modo-claro: #fffbfb;
+  --texto-modo-claro: #030613;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 2em auto;
+  width: 70%;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===========TEMA OSCURO / CLARO=========== */
+body {
+  color: var(--texto-modo-claro);
+  background-color: var(--modo-claro);
+}
+
+/* ===========CONTENEDOR PRINCIPAL=========== */
+section {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.perfil {
+  text-align: center;
+  width: 30%;
+}
+
+.perfil img {
+  border-radius: 50%;
+  width: 11em;
+}
+
+.contenido {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 2em;
+  width: 60%;
+}
+
+.contenido-titulo, .contenido-numero, .contenido-descripcion {
+  padding: 0.5em 0;
+}
+
+.contenido-titulo span {
+  font-weight: 900;
+  padding-right: 2em;
+}
+
+.contenido-titulo button {
+  border: none;
+  border-radius: 0.5em;
+  font-weight: 900;
+  padding: 0.5em 1.5em;
+  text-transform: capitalize;
+}
+
+.contenido-numero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contenido-numero span {
+  padding-right: 2em;
+}
+
+/* ===========CONTENEDOR HISTORIA=========== */
+.historia-circulo {
+  font-weight: 600;
+  padding: 0.1em;
+  text-align: center;
+}
+
+.historia-circulo img {
+  border: 3px solid gray;
+  border-radius: 50%;
+  padding: 0.2em;
+  width: 100px;
+}
+
+.historia-circulo img:hover {
+  border: 3px solid var(--texto-modo-claro);
+  zoom: 1.1;
+}
+
+/* ===========CONTENEDOR MURO=========== */
+#contenedor-muro {
+  text-align: left;
+}
+
+.muro-enlace {
+  border-top: 1px solid gray;
+  padding: 0.5em 0;
+  text-align: center;
+  width: 100%;
+}
+
+.muro-enlace a {
+  color: gray;
+  font-weight: 900;
+  padding: 0.5em 2em;
+  text-transform: uppercase;
+}
+
+.muro-enlace a:hover {
+  border-top: 2px solid var(--texto-modo-claro);
+  color: var(--texto-modo-claro);
+}
+
+#fotografias div {
+  display: inline-block;
+}
+
+.fotografia {
+  padding: 0.4em;
+}
+
+.fotografia img {
+  width: 300px;
+  border-radius: 0.3em;
+}
+
+/* ===========FOOTER=========== */
+footer {
+  text-align: center;
+  color: gray;
+}
+
+footer ul li {
+  padding-right: 2em;
+  padding-bottom: 0.6em;
+  display: inline-block;
+  list-style: none;
+}

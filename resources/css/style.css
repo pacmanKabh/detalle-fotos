@@ -38,6 +38,10 @@ section {
   justify-content: flex-start;
 }
 
+#contenedor-principal {
+  padding: 2em 0;
+}
+
 .perfil {
   text-align: center;
   width: 30%;
@@ -98,7 +102,6 @@ section {
 
 .historia-circulo img:hover {
   border: 3px solid var(--texto-modo-claro);
-  zoom: 1.1;
 }
 
 /* ===========CONTENEDOR MURO=========== */
@@ -125,17 +128,26 @@ section {
   color: var(--texto-modo-claro);
 }
 
-#fotografias div {
-  display: inline-block;
+#fotografias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .fotografia {
-  padding: 0.4em;
+  margin: 0.4em;
+  height: 290px;
+  display: flex;
+  align-items: center;
 }
 
 .fotografia img {
-  width: 300px;
-  border-radius: 0.3em;
+  width: 290px;
+  border-radius: 0.5em;
+  image-rendering: auto;
 }
 
 /* ===========FOOTER=========== */
